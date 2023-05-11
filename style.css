@@ -2,22 +2,36 @@
   box-sizing: border-box;
 }
 
-:root {
-}
-
 html {
-  font-family: ;
+  font-family: "Nothing You Could Do", cursive;
   direction: ltr;
-  font-size: ;
+  font-size: 20px;
 }
 
 body {
   margin: 0;
-  height: ;
-  background-color: var(--page-background-color);
-  color: var(--page-text-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Fallbacks für manche Styles benutzen, S.13 unten */
+main {
+  background-color: #fafafa;
+  box-shadow: 0.1rem 0.1rem 0.25rem rgba(17, 17, 17, 0.35);
+  transform-origin: left bottom;
+  transform: rotate(-3deg);
+}
 
-/* Füge media queries ein, S.15 unten*/
+img {
+  width: 70vmin;
+  padding-top: 1.5vmin;
+}
+
+figcaption {
+  all: unset;
+  display: block;
+  text-align: center;
+  padding-block: 2vmin 0;
+  font-size: 3.5vmin;
+}
